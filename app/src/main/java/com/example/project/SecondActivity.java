@@ -1,7 +1,9 @@
 package com.example.project;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -28,11 +30,14 @@ public class SecondActivity extends AppCompatActivity {
         newPrefText = findViewById(R.id.settingseditview);
     }
 
-    public void savePref() {
+    public void savePref(View view) {
         String text = newPrefText.getText().toString();
         editor.putString("MyEditTextValue", text);
-        editor.apply();
+        editor.commit();
 
-        prefTextRef.setText(text);
+        Intent returnIntent = new Intent();
+        returnIntent.putExtra("result", text);
+        setResult(RESULT_OK, returnIntent);
+        finish();
     }
-}
+    }

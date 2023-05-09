@@ -20,22 +20,30 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
         myPreferenceRef = getSharedPreferences("MyPreferencesName", MODE_PRIVATE);
         myPreferenceEditor = myPreferenceRef.edit();
 
         TextView prefTextRef = findViewById(R.id.Robin);
-        prefTextRef.setText(myPreferenceRef.getString("MyAppPreferenceString", "No preference found."));
+        prefTextRef.setText(myPreferenceRef.getString("MyEditTextValue", "No preference found."));
 
         Button button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-                startActivity(intent);
+                startActivityForResult(intent, 1);
             }
         });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 1 && resultCode == RESULT_OK) {
+            String text = data.getStringExtra("result");
+            TextView prefTextRef = findViewById(R.id.Robin);
+            prefTextRef.setText(text);
+        }
     }
 }
