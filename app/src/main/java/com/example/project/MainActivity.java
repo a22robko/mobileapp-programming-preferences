@@ -34,8 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                 startActivityForResult(intent, 1);
             }
-        });
-    }
+        });}
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
