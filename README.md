@@ -31,10 +31,8 @@ TextView i MainActivity.
     
 ```
 
-
 ![](HeterRobin.png)
 ![](HeterRobinSave.png)
-
 
 
 Fördel:
