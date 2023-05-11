@@ -33,7 +33,6 @@ TextView i MainActivity.
 ![](Robin1.png)
 ![](Robin2.png)
 
-
 Fördel:
 Fördel med SharedPreferences är genom att använda SharedPreferences
 kan du enkelt få åtkomst till att spara och hämta värden. Detta gör 
