@@ -30,8 +30,8 @@ TextView i MainActivity.
     
 ```
 
-![](![Nybild1.Preferences.png.png)
-![](Nybild2.preferences.png.png)
+![](![Nybild1.Preferences.png)
+![](Nybild2.preferences.png)
 
 
 Fördel:
