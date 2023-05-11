@@ -1,3 +1,4 @@
+
 **Skriv din rapport här!**
 I denna uppgift hade man en secondActivity och en MainActivity i Main activity skulle det finnas en 
 knapp när användaren trycker på knappen skall hen komma till SecondActivity. I SecondActivity skall
@@ -15,7 +16,7 @@ TextView i MainActivity.
 ```  
         myPreferenceRef = getSharedPreferences("MyPreferencesName", MODE_PRIVATE);
         myPreferenceEditor = myPreferenceRef.edit();
-
+        
         TextView prefTextRef = findViewById(R.id.Robin);
         prefTextRef.setText(myPreferenceRef.getString("MyEditTextValue", "No preference found."));
 
@@ -36,10 +37,11 @@ TextView i MainActivity.
 
 
 Fördel:
-En nackdel kan vara att det kan vara svårt att hantera data som lagras i SharedPreferences när 
-applikationen växer och mer data behöver hanteras.
+Fördel med SharedPreferences är genom att använda SharedPreferences
+kan du enkelt få åtkomst till att spara och hämta värden. Detta gör 
+det smidigt att hantera preferenser och data.
 
 
 Nackdel:
-En nackdel kan vara att det kan vara svårt att hantera data som lagras i SharedPreferences när 
-applikationen växer och mer data behöver hanteras.
+En nackdel kan vara att det kan vara svårt att hantera data som lagras i 
+SharedPreferences när applikationen växer och mer data behöver hanteras.
