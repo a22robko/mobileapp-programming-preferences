@@ -31,8 +31,8 @@ TextView i MainActivity.
     
 ```
 
-![](HeterRobin.png)
-![](HeterRobinSave.png)
+![](![Nybild1.Preferences.png)
+![](Nybild2.preferences.png)
 
 
 Fördel:
