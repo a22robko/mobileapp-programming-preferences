@@ -31,7 +31,7 @@ TextView i MainActivity.
 ```
 
 ![](Bild1.png)
-![](BildRobin2.png)
+
 
 
 Fördel:
