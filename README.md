@@ -1,5 +1,3 @@
-
-**Skriv din rapport här!**
 I denna uppgift hade man en secondActivity och en MainActivity i Main activity skulle det finnas en 
 knapp när användaren trycker på knappen skall hen komma till SecondActivity. I SecondActivity skall
 Användaren skriva en ågot occh senare trycka på save knappen. När hen trycker på saveknappen skall 
