@@ -30,8 +30,9 @@ TextView i MainActivity.
     
 ```
 
-![](Robin1.png)
-![](Robin2.png)
+![](BildRobin1.png)
+![](BildRobin2.png)
+
 
 Fördel:
 Fördel med SharedPreferences är genom att använda SharedPreferences
